@@ -1,0 +1,17 @@
+.mydropy{
+  background-color: #007bff;
+  border: none;
+  color: white;
+}
+.mydropy option{
+  background-color: white;
+  border: none;
+  color: black;
+}
+.clickable{
+  cursor: pointer;
+}
+.myss{
+  background: none;
+  font-size: x-large;
+}

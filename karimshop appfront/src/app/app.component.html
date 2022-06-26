@@ -1,0 +1,6 @@
+<app-header *ngIf="!authService.isAdminUser() && !authService.isAdminPord()"></app-header>
+<router-outlet></router-outlet>
+<app-footer *ngIf="!authService.isAdminUser() && !authService.isAdminPord()"></app-footer>
+<!--<app-header ></app-header>
+<router-outlet></router-outlet>
+<app-footer ></app-footer>-->

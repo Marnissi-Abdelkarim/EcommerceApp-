@@ -1,0 +1,61 @@
+<section class="category section pt-3 pb-0" style="margin-top: 25px">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="title text-center" style="margin-bottom: 40px">
+          <span style="font-size: 30px">CAREFULLY CREATED COLLECTIONS</span>
+
+          <h2 style="color: #007bff">BROWSE OUR CATEGORIES</h2>
+          <!-- <p>Newest</p>-->
+        </div>
+      </div>
+    </div>
+    <div class="row" *ngIf="categories">
+      <div class="col-lg-4 col-sm-12 col-md-6" *ngFor="let c of categories.slice(0, 3)"  >
+        <div class="cat-item mb-4 mb-lg-0" style="background-color: #f2f2f2">
+          <div><img  src="{{this.catalogueservice.host+'/photoCategory/'+c.id}}" alt="" class="img-fluid" style="float: right;width: 350px;
+    height: 235px;"></div>
+          <div style="clear:both;"></div>
+          <div class="item-info" style="right: 0;left: 35px;top:21%">
+<!--
+            <p class="mb-0" style="font-size: 25px;color: black;font-family: 'Lucida Console' ;font-weight: bold">{{c.name}}</p>
+-->
+           <!-- <h4 class="mb-4">up to <strong>50% </strong>off</h4>-->
+           <!-- <a routerLink="/shop/1/{{c.id}}" class="btn btn-main"><i class="ti-bag mr-2"></i>Shop now</a>-->
+            <div style="margin-left: 20px;margin-top: 10px" ><button class="hoverbtn"  routerLink="/shop/2/{{c.id}}" style="font-size: 14px;
+    position: relative;
+    font-weight: 550;
+    color: #000000;
+    margin:23%;
+    padding: 6px 18px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    background-color:rgb(255,255,255,0.85);-webkit-transition: all 300ms ease;text-decoration: none;
+    text-transform: capitalize; " ><!--<i class="ti-bag mr-2"></i>-->{{c.name}}</button></div>
+
+          </div>
+        </div>
+      </div>
+      <!--<div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="cat-item mb-4 mb-lg-0">
+          <img src="assets/images/cat-2.jpg" alt="" class="img-fluid">
+          <div class="item-info">
+            <p class="mb-0">Ladies hand bag</p>
+            <h4 class="mb-4">up to <strong>40% </strong>off</h4>
+            <a href="#" class="read-more">Shop now</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12 col-md-6">
+        <div class="cat-item">
+          <img src="assets/images/cat-3.jpg" alt="" class="img-fluid">
+          <div class="item-info">
+            <p class="mb-0">Trendy shoe</p>
+            <h4 class="mb-4">up to <strong>50% </strong>off</h4>
+            <a href="#" class="read-more">Shop now</a>
+          </div>
+        </div>
+      </div>-->
+    </div>
+  </div>
+</section>
